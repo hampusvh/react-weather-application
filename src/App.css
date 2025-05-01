@@ -1,0 +1,11 @@
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(34, 121, 195, 0.9) 0%,
+    rgba(45, 253, 219, 0.85) 100%
+  );
+  background-repeat: no-repeat;
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  background-size: cover;
+}

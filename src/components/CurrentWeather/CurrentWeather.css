@@ -1,0 +1,62 @@
+.weather-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent för glas-effekt */
+  backdrop-filter: blur(12px); /* Frostad glas-effekt */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Djup skugga */
+  text-align: center;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 60px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+.search-loc {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.current-temp {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Modern och stilren knapp */
+.save-btn {
+  margin-top: 15px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(0, 123, 255, 0.7);
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
+}
+
+/* Hover-effekt */
+.save-btn:hover {
+  scale: 0.95;
+  transition: 0.3s ease-in-out;
+  color: white;
+  background: rgba(0, 123, 255, 0.9);
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.6);
+}
+
+.save-btn:active {
+  color: rgb(76, 185, 141);
+}
