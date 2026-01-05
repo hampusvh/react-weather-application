@@ -1,14 +1,14 @@
-# Weather App 3.0 ☀️
+# React Weather Application
 
-Det här projektet är en väderapplikation byggd med **React** och hämtar data från **WeatherAPI.com**.
+This project is a weather application built with React that retrieves and displays weather data from the WeatherAPI service.
 
-Applikationen använder komponentbaserad struktur, hanterar flera API-anrop centralt i `App.jsx` och presenterar både aktuellt väder och en väderprognos.
+The application provides current weather conditions as well as a short-term forecast, with support for location search, saved locations, and geolocation-based weather data.
 
-## Funktioner
+## Features
 
-- Sök efter valfri plats och visa aktuellt väder
-- Visa 3-dagars väderprognos (begränsning i gratisversionen av API:t)
-- Spara favoritplatser
-- Ta bort sparade platser
-- Visa väder för användarens nuvarande position (geolocation)
-- Felmeddelanden vid ogiltig plats eller API-fel
+- Search for any location and view current weather conditions
+- Display a 3-day weather forecast (limited by the free WeatherAPI plan)
+- Save favorite locations for quick access
+- Remove saved locations
+- Retrieve weather data based on the user’s current location (geolocation)
+- User-friendly error handling for invalid locations and API errors
