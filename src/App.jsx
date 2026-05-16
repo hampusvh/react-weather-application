@@ -8,7 +8,6 @@ import SavedDropdown from "./components/SavedDropdown/SavedDropdown";
 
 import {
   getWeatherInfo,
-  getForecast,
   getWeatherLocation,
 } from "./services/weatherApi";
 import useLocalStorage from "./hooks/useLocalStorage";
@@ -30,7 +29,7 @@ function App() {
     }
     try {
       const data = await getWeatherInfo(city);
-      const forecastData = await getForecast(city);
+      const forecastData = data;
 
       if (data.error) {
         setErrorMessage("Felaktig data. Kontrollera stavning!");
@@ -70,7 +69,7 @@ function App() {
 
         try {
           const data = await getWeatherLocation(latitude, longitude);
-          const forecastData = await getForecast(`${latitude},${longitude}`);
+          const forecastData = data;
           setWeatherData(data);
           setForecastData(forecastData);
           setErrorMessage("");
