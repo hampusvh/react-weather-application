@@ -12,6 +12,7 @@ import {
 } from "./services/weatherApi";
 import useLocalStorage from "./hooks/useLocalStorage";
 import "./App.css";
+import "./index.css";
 
 function App() {
   const [weatherData, setWeatherData] = useState(null);
